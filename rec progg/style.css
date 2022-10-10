@@ -1,0 +1,167 @@
+* {
+    font-family: monospace;
+    
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    color: white;
+}
+
+body {
+    background:lightskyblue;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 160px 2fr 2fr 2fr;
+    width: 600px;
+    column-gap: 19px;
+    row-gap: 5px;
+    border: solid black 1px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 40px 15px 15px 15px;
+    background:lightsteelblue;
+    box-shadow: 5px 5px rgb(72, 145, 228), -1em 0 0.4em rgb(72, 145, 228);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,50,162,1) 40%, rgba(0,212,255,1) 100%);
+    
+}
+
+p {
+    grid-column: 1 / 5;
+    align-items: center;
+}
+
+form label {
+    margin: auto;
+    padding: 8px 0px;
+    align-self: center;
+    text-shadow: rgb(83, 192, 196) 0.2em 0.2em 0.2em;
+}
+
+form label[for = "uid"]{
+    grid-column: 1 / 2;
+}
+
+form label[for = "nome"]{
+    grid-column: 1 / 2;
+}
+
+form label[for = "gen"] {
+    justify-self: left;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 40px;
+
+}
+
+input[type ="radio"] {
+    width: 10px;
+    height: 10px;
+    place-self: stretch;
+    align-self: center;
+
+}
+
+input[type ="checkbox"] {
+    grid-column: 2;
+    width: 20px;
+    height: 15px;
+}
+
+input, textarea,select {
+    grid-column: 2 / 5;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+input[type ="submit"], input[type ="reset"], input[type ="color"] {
+    font-size: 12px;
+    margin: auto;
+    width: 100%;
+    height: 48px;
+    transition: 1s all;
+}
+
+h1{
+    text-align:left;
+    margin-left: 230px;
+}
+
+
+input[type ="submit"]:hover, input[type ="reset"]:hover, input[type ="color"]:hover {
+        background-color: rgb(153, 211, 238);
+        transition: 1s all;
+        transform: translate(6px);
+        
+      }
+
+input#nome {
+    border-radius: 10px;
+}
+
+input#end {
+    border-radius: 10px;
+    transform:scale(20px, 20%);
+}
+
+input#pwd {
+    border-radius: 10px;
+}
+
+input#pwd2 {
+    border-radius: 10px;
+    
+}
+
+input#cpf {
+    border-radius: 10px;
+
+}
+
+input#semana {
+    border-radius: 10px;
+}
+
+input#hr{
+    border-radius: 10px;
+}
+
+select#sel {
+    border-radius: 10px;
+}
+
+textarea#textbox {
+    border-radius: 10px;
+}
+
+input:focus, textarea {
+    border-radius: 10px;
+    color: rgb(107, 187, 224);
+}
+
+h1{
+    color: rgb(153, 211, 238);
+}
+
+div#error.error{
+        border-color: #e8273b;
+        color: #FFF;
+        background-color: #ed5565;
+}
+
+
+
